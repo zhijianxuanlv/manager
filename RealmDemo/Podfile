@@ -1,0 +1,2 @@
+pod 'Realm', '~> 0.97.0'
+pod 'UITableView+FDTemplateLayoutCell'

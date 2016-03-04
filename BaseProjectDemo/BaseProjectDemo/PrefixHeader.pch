@@ -1,0 +1,75 @@
+//
+//  PrefixHeader.pch
+//  BaseProjectDemo
+//
+//  Created by 罗成 on 16/2/20.
+//  Copyright © 2016年 罗成. All rights reserved.
+//
+
+#import <Availability.h>
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "AppDelegate.h"
+#import "UIColor+HEX.h"
+#import "UIImage+image.h"
+#import "BaseNavViewController.h"
+#import "LCRequestManager.h"
+#import "MJExtension.h"
+#import "LCAttributeString.h"
+#import "Enum.h"
+#import "ZFProgressView.h"
+#define AFNETWORKING_ALLOW_INVALID_SSL_CERTIFICATES
+
+// 获得RGB颜色
+
+#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+#define iOS8 ([[UIDevice currentDevice].systemVersion doubleValue] >= 8.0)
+#define iOS9 ([[UIDevice currentDevice].systemVersion doubleValue] >= 9.0)
+
+
+#define iPhone4s ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#ifdef DEBUG
+#define DebugLog(...)  NSLog(__VA_ARGS__)
+#else
+#define DebugLog(...)
+#endif
+
+#ifdef DEBUG
+#define DLOG(...)  NSLog(__VA_ARGS__)
+#else
+#define DLOG(...)
+#endif
+
+
+#define UserDefaults [NSUserDefaults standardUserDefaults]
+
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define ScreenWidth  [UIScreen mainScreen].bounds.size.width
+
+#define RESPONSE_OK  [json[@"responseCode"] integerValue] == 1
+
+#define K_LOGIN_STATUS_NOTIFCATION  @"K_LOGIN_STATUS_NOTIFCATION"
+#define K_LOGIN_NOTIFICATION        @"K_LOGIN_NOTIFICATION"
+
+#define K_PAY_SUCCESS_NOTIFICATION  @"K_PAY_SUCCESS_NOTIFICATION"
+
+#define K_ACCOUNT_UPDATE_NOTIFICATION @"K_ACCOUNT_UPDATE_NOTIFICATION"
+
+#define K_DEVICE_TOKEN  @"BelApp_DeviceToken"
+#define kKeyWindow [UIApplication sharedApplication].keyWindow
+
+#define responseOK [json[@"responseCode"] isEqualToString:@"1"]
+
+
+#endif
+
+

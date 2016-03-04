@@ -1,0 +1,13 @@
+//
+//  PrefixHeader.pch
+//  BelSwift
+//
+//  Created by 罗成 on 16/2/23.
+//  Copyright © 2016年 罗成. All rights reserved.
+//
+
+
+
+#define RGB_COLOR(R, G, B) UIColor(red: R, green: G, blue: B, alpha: 1.0)
+
+

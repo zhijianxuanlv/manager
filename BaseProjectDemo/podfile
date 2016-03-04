@@ -1,0 +1,10 @@
+platform :ios,  '7.0'
+
+pod 'AFNetworking', '~> 3.0.4'
+pod 'MJRefresh', '~> 2.4.12'
+pod 'SDWebImage', '~> 3.7.3'
+pod 'MJExtension', '~> 2.5.12'
+pod 'IQKeyboardManager'
+pod 'SDCycleScrollView','~> 1.6'
+pod 'UITableView+FDTemplateLayoutCell'
+pod 'MBProgressHUD'

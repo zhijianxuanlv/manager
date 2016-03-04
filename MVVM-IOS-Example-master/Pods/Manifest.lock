@@ -1,0 +1,22 @@
+PODS:
+  - Expecta (0.3.0)
+  - ReactiveCocoa (2.3):
+    - ReactiveCocoa/UI (= 2.3)
+  - ReactiveCocoa/Core (2.3):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.3)
+  - ReactiveCocoa/UI (2.3):
+    - ReactiveCocoa/Core
+  - Specta (0.2.1)
+
+DEPENDENCIES:
+  - Expecta
+  - ReactiveCocoa
+  - Specta
+
+SPEC CHECKSUMS:
+  Expecta: 917bda2935b63ca7175741b8cf1b26796db6205f
+  ReactiveCocoa: fbe689fe218063b7bbed41032912c9ca4fdbe172
+  Specta: 15a276a6343867b426d5ed135d5aa4d04123a573
+
+COCOAPODS: 0.38.2
